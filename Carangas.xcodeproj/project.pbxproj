@@ -17,9 +17,12 @@
 		ED460799276D4AC800362118 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED460798276D4AC800362118 /* Car.swift */; };
 		ED46079E276D4C5300362118 /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED46079D276D4C5300362118 /* REST.swift */; };
 		ED4607A0276E12DF00362118 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED46079F276E12DF00362118 /* Brand.swift */; };
+		FC3E3863CBAC9FBBCC50364E /* Pods_Carangas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B659DB181B43511C6E159B /* Pods_Carangas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06222F07B1203CF31AB27208 /* Pods-Carangas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carangas.debug.xcconfig"; path = "Target Support Files/Pods-Carangas/Pods-Carangas.debug.xcconfig"; sourceTree = "<group>"; };
+		34B659DB181B43511C6E159B /* Pods_Carangas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carangas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B18D011F9C1BDD00313110 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B18D041F9C1BDD00313110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1B18D091F9C1BDD00313110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		A1B18D161F9C1D7E00313110 /* CarsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
 		A1B18D181F9C1DBA00313110 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		A1B18D1A1F9C1DCF00313110 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		CB7F649F02B02D0D83297A7F /* Pods-Carangas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carangas.release.xcconfig"; path = "Target Support Files/Pods-Carangas/Pods-Carangas.release.xcconfig"; sourceTree = "<group>"; };
 		ED460798276D4AC800362118 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		ED46079D276D4C5300362118 /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
 		ED46079F276E12DF00362118 /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
@@ -40,18 +44,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3E3863CBAC9FBBCC50364E /* Pods_Carangas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57D850138BFFC0F23E56C257 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06222F07B1203CF31AB27208 /* Pods-Carangas.debug.xcconfig */,
+				CB7F649F02B02D0D83297A7F /* Pods-Carangas.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1B18CF81F9C1BDD00313110 = {
 			isa = PBXGroup;
 			children = (
 				A1B18D031F9C1BDD00313110 /* Carangas */,
 				A1B18D021F9C1BDD00313110 /* Products */,
 				ED4607A1276E257500362118 /* Frameworks */,
+				57D850138BFFC0F23E56C257 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				ED4607A2276E257500362118 /* WebKit.framework */,
+				34B659DB181B43511C6E159B /* Pods_Carangas.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B18D131F9C1BDD00313110 /* Build configuration list for PBXNativeTarget "Carangas" */;
 			buildPhases = (
+				8A904C84B2FBA2A7C8BF3E94 /* [CP] Check Pods Manifest.lock */,
 				A1B18CFD1F9C1BDD00313110 /* Sources */,
 				A1B18CFE1F9C1BDD00313110 /* Frameworks */,
 				A1B18CFF1F9C1BDD00313110 /* Resources */,
@@ -179,6 +197,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A904C84B2FBA2A7C8BF3E94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carangas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1B18CFD1F9C1BDD00313110 /* Sources */ = {
@@ -326,6 +369,7 @@
 		};
 		A1B18D141F9C1BDD00313110 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06222F07B1203CF31AB27208 /* Pods-Carangas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,6 +385,7 @@
 		};
 		A1B18D151F9C1BDD00313110 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7F649F02B02D0D83297A7F /* Pods-Carangas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
