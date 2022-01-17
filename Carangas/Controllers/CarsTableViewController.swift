@@ -86,7 +86,7 @@ class CarsTableViewController: UITableViewController {
                 if code != 200 {
                     response = "Algum problema com o servidor. :( \nError:\(code)"
                 }
-            }s
+            }
             
             print(response)
             DispatchQueue.main.async {
